@@ -108,10 +108,10 @@ body {
   padding: 50px 0px;
 }
 
-//.sk_scaffold {
-//  border: 2px solid mediumblue;
-//  margin: 10px;
-//}
+.sk_scaffold {
+  border: 2px solid mediumblue;
+  margin: 10px;
+}
 
 /************************************************************************************
                                   REVIEW SECTION
@@ -169,6 +169,26 @@ body {
         padding-top: 40px;
         padding-bottom: 85px;
         max-width: 900px;
+      }
+    }
+  }
+}
+
+/*************************************************************************************
+                                 STATS SECTION
+**************************************************************************************/
+.stat-section-container{
+  background-color: $bg-gray;
+  display: flex;
+  .stat-section-lbox{
+
+  }
+  .stat-section-rbox{
+    .stat-section-rboxrow{
+      display: flex;
+      //justify-content: space-between;
+      .stat-section-rboxrow-content{
+        display: flex;
       }
     }
   }
