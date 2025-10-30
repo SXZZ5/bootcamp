@@ -1,0 +1,10 @@
+html element collection vs node list element collection
+	html element collection pe javascript arrays waale saare functions available hain
+	node list me saare functions array wale nahi available hain.
+	
+	
+html collection prefer karte hain. nodelist me thoda jhaam hai. khud hi line breaks ko bhi child samajh ke include kar deta hai. 
+
+
+capturing phase, bubbling phase in event handling.
+-> for capturing phase me executing/firing your handler function use: addEventListener(eventName, handler_fxn, true) 
