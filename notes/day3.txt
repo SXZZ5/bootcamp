@@ -8,3 +8,14 @@ html collection prefer karte hain. nodelist me thoda jhaam hai. khud hi line bre
 
 capturing phase, bubbling phase in event handling.
 -> for capturing phase me executing/firing your handler function use: addEventListener(eventName, handler_fxn, true) 
+
+
+dog wale example me agar child instance se ek property delete kar di jo ki ek member function access karna chahta hai via this keyword tab kya hoga ?
+
+instances of an object or extensions of an object can override the properties for themselves but not in the __proto__ since other instances are still depending on the original value in __proto__
+
+circular objects ko stringify nahi kar sakte. Stringifying ya toString ko __proto__ chain ki endpoint honi chahiye necessarily. 
+
+
+
+
