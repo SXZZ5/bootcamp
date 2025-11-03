@@ -108,9 +108,13 @@ body {
   padding: 50px 0px;
 }
 
+//.sk_scaffold {
+//  border: 2px solid mediumblue;
+//  margin: 10px;
+//}
+
 .sk_scaffold {
-  border: 2px solid mediumblue;
-  margin: 10px;
+
 }
 
 /************************************************************************************
@@ -177,18 +181,45 @@ body {
 /*************************************************************************************
                                  STATS SECTION
 **************************************************************************************/
-.stat-section-container{
+.stat-section-parentcontainer {
   background-color: $bg-gray;
-  display: flex;
-  .stat-section-lbox{
-
-  }
-  .stat-section-rbox{
-    .stat-section-rboxrow{
-      display: flex;
-      //justify-content: space-between;
-      .stat-section-rboxrow-content{
+  padding: 28px;
+  .stat-section-container{
+    display: flex;
+    justify-content: space-evenly;
+    .stat-section-lbox{
+      .blackText {
+        font-weight: bold;
+        font-size: larger;
+      }
+      .greenText {
+        color: $brand-green;
+        font-weight: bold;
+        font-size: larger;
+      }
+      .smallText {
+        color: black;
+        font-size: smaller;
+      }
+    }
+    .stat-section-rbox{
+      .stat-section-rboxrow{
         display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        .stat-section-rboxrow-content{
+          display: flex;
+          gap: 15px;
+        }
+        .numStyle {
+          font-size: x-large;
+          font-weight: bold;
+        }
+        .captionStyle{
+          font-size: x-small;
+          color: $neutral-grey;
+          font-weight: bold;
+        }
       }
     }
   }

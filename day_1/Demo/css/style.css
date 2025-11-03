@@ -104,11 +104,6 @@ body {
   padding: 50px 0px;
 }
 
-.sk_scaffold {
-  border: 2px solid mediumblue;
-  margin: 10px;
-}
-
 /************************************************************************************
                                   REVIEW SECTION
 *************************************************************************************/
@@ -162,15 +157,44 @@ body {
 /*************************************************************************************
                                  STATS SECTION
 **************************************************************************************/
-.stat-section-container {
+.stat-section-parentcontainer {
   background-color: #F5F7FA;
-  display: flex;
+  padding: 28px;
 }
-.stat-section-container .stat-section-rbox .stat-section-rboxrow {
+.stat-section-parentcontainer .stat-section-container {
   display: flex;
+  justify-content: space-evenly;
 }
-.stat-section-container .stat-section-rbox .stat-section-rboxrow .stat-section-rboxrow-content {
+.stat-section-parentcontainer .stat-section-container .stat-section-lbox .blackText {
+  font-weight: bold;
+  font-size: larger;
+}
+.stat-section-parentcontainer .stat-section-container .stat-section-lbox .greenText {
+  color: #4CAF4F;
+  font-weight: bold;
+  font-size: larger;
+}
+.stat-section-parentcontainer .stat-section-container .stat-section-lbox .smallText {
+  color: black;
+  font-size: smaller;
+}
+.stat-section-parentcontainer .stat-section-container .stat-section-rbox .stat-section-rboxrow {
   display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.stat-section-parentcontainer .stat-section-container .stat-section-rbox .stat-section-rboxrow .stat-section-rboxrow-content {
+  display: flex;
+  gap: 15px;
+}
+.stat-section-parentcontainer .stat-section-container .stat-section-rbox .stat-section-rboxrow .numStyle {
+  font-size: x-large;
+  font-weight: bold;
+}
+.stat-section-parentcontainer .stat-section-container .stat-section-rbox .stat-section-rboxrow .captionStyle {
+  font-size: x-small;
+  color: #717171;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
