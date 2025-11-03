@@ -224,3 +224,70 @@ body {
     }
   }
 }
+
+
+/****************************************************************************
+                              Our client section
+****************************************************************************/
+.centered-div {
+  max-width: fit-content;
+  margin: auto auto;
+}
+
+.our-client-container {
+  padding: 20px;
+  .bigText {
+    font-size: x-large;
+    font-weight: bold;
+  }
+  .smallText {
+    color: hsl(0 0% 65%);
+    font-size: 14px;
+    //font-weight: bold;
+  }
+  .our-client-img-list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/************************************************************
+                         Community Section
+*************************************************************/
+
+.community-section {
+  padding: 30px;
+  .bigText {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+  .smallText {
+    font-size: 14px;
+    color: hsl(0 0% 65%);
+  }
+  .community-list {
+    display: flex;
+    justify-content: space-between;
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04);
+      padding: 10px;
+      position: relative;
+      .img-shift {
+        position: relative;
+        left: 29px;
+      }
+      .U{
+        font-size: x-large;
+        font-weight: bold;
+        text-wrap: balance;
+        max-width: 200px;
+      }
+      .V{
+        font-size: 14px;
+        color: hsl(0 0% 65%);
+        text-wrap: balance;
+        max-width: 200px;
+      }
+    }
+  }
+}

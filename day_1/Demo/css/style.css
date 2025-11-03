@@ -197,4 +197,68 @@ body {
   font-weight: bold;
 }
 
+/****************************************************************************
+                              Our client section
+****************************************************************************/
+.centered-div {
+  max-width: fit-content;
+  margin: auto auto;
+}
+
+.our-client-container {
+  padding: 20px;
+}
+.our-client-container .bigText {
+  font-size: x-large;
+  font-weight: bold;
+}
+.our-client-container .smallText {
+  color: hsl(0, 0%, 65%);
+  font-size: 14px;
+}
+.our-client-container .our-client-img-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+/************************************************************
+                         Community Section
+*************************************************************/
+.community-section {
+  padding: 30px;
+}
+.community-section .bigText {
+  font-size: xx-large;
+  font-weight: bold;
+}
+.community-section .smallText {
+  font-size: 14px;
+  color: hsl(0, 0%, 65%);
+}
+.community-section .community-list {
+  display: flex;
+  justify-content: space-between;
+}
+.community-section .community-list .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04);
+  padding: 10px;
+  position: relative;
+}
+.community-section .community-list .card .img-shift {
+  position: relative;
+  left: 29px;
+}
+.community-section .community-list .card .U {
+  font-size: x-large;
+  font-weight: bold;
+  text-wrap: balance;
+  max-width: 200px;
+}
+.community-section .community-list .card .V {
+  font-size: 14px;
+  color: hsl(0, 0%, 65%);
+  text-wrap: balance;
+  max-width: 200px;
+}
+
 /*# sourceMappingURL=style.css.map */
