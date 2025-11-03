@@ -22,11 +22,6 @@ function addProductToPage(product) {
     solutionDiv.appendChild(product.htmlelement);
 }
 
-Product.prototype.getDiscountedPrice = function(percent) {
-    var discountValue = Number(percent) * this.price/100;
-    return this.price - discountValue;
-};
-
 function getCostliest(arrItems) {
     console.log(typeof arrItems);
     console.log(arrItems);
@@ -45,6 +40,12 @@ function getCostliest(arrItems) {
     info.style.padding = "10px";
     solutionDiv.appendChild(info);
 }
+
+Product.prototype.getDiscountedPrice = function(percent) {
+    var discountValue = Number(percent) * this.price/100;
+    return this.price - discountValue;
+};
+
 
 (function(){
     var apple = new Product("Apple", 200, "Fruits");
