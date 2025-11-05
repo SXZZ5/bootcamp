@@ -86,9 +86,19 @@ body {
 .care-image-container {
   position: relative;
   width: 368px;
+  .link-style{
+    position: relative;
+    color: $brand-green;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .care-text {
+  color: hsl(0, 0%, 60%);
+  font-weight: bold;
   position: absolute;
   background: #F5F7FA;
   width: 80%;
@@ -99,6 +109,7 @@ body {
   text-align: center;
   padding: 45px;
   box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .care-image-wrapper {
@@ -108,14 +119,14 @@ body {
   padding: 50px 0px;
 }
 
-//.sk_scaffold {
-//  border: 2px solid mediumblue;
-//  margin: 10px;
-//}
-
 .sk_scaffold {
-
+  border: 2px solid mediumblue;
+  margin: 10px;
 }
+
+//.sk_scaffold {
+//
+//}
 
 /************************************************************************************
                                   REVIEW SECTION
@@ -291,3 +302,112 @@ body {
     }
   }
 }
+
+/*********************************************************************************
+                           Demo Section
+**********************************************************************************/
+.demo-container{
+  background-color: $bg-gray;
+  padding: 50px;
+  .bigText{
+    font-size: x-large;
+    font-weight: bold;
+    max-width: fit-content;
+    margin: auto auto;
+  }
+  .btn{
+    margin-top: 14px;
+    color: white;
+    background-color: $brand-green;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 3px;
+    padding: 14px 22px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+/*********************************************************************************
+                           Footer Section
+**********************************************************************************/
+.footer-container{
+  background-color: $neutral-black;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  .left-box{
+
+  }
+  .right-box{
+    display: flex;
+    .bigText{
+      font-size: x-large;
+      margin-bottom: 10px
+    }
+    .first{
+      color: white;
+    }
+    .second{
+      color: white;
+    }
+    .third{
+      color: white;
+      .input-form{
+        background-color: hsl(0 0% 25%);
+        max-width: 255px;
+        //min-height: 40px;
+        border-radius: 6px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .input-control{
+          all: unset;
+          color:$text-gray
+        }
+      }
+    }
+
+  }
+}
+
+
+/*********************************************************************************
+                           Banner Section
+**********************************************************************************/
+.banner-section{
+  background-color: $bg-gray;
+  .tmp-container {
+    .tmp-container2{
+      .bigText1 {
+        font-size: xx-large;
+      }
+      .bigText2 {
+        font-size: x-large;
+        color: $brand-green;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
